@@ -28,6 +28,7 @@ body {
 
 /* ===== Навігація ===== */
 .nav-link {
+  position: relative;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -35,7 +36,21 @@ body {
   text-decoration: none;
   padding: 24px 0; /* ✅ вертикальні відступи всередині посилання */
   display: block; /* щоб padding застосувався коректно по всій висоті */
-  text-decoration: none
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link.current {
+  color: #404bbf; /* ✅ */
+}
+
+.nav-link.current::after {
+  content: ""; /* ✅ обов'язково порожній */
+  position: absolute; /* ✅ позиціюємо відносно батька */
+  left: 0;
+  bottom: -1px;
+  width: 100%; /* ✅ по ширині батьківського елемента */
+  height: 4px; /* ✅ товщина підкреслення */
+  background-color: #404bbf; /* ✅ колір */
+  border-radius: 2px; /* ✅ закруглені краї */
 }
 
 .nav-link:hover,
@@ -117,9 +132,14 @@ img { display: block; max-width: 100%; height: auto; }
 
 /* ===== Герой (перша секція) ===== */
 .hero {
-  background-color: #2e2f42;
-  text-align: center;
-  padding: 188px 0;
+  background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -148,6 +168,7 @@ img { display: block; max-width: 100%; height: auto; }
   color: #ffffff;
   cursor: pointer;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -206,6 +227,18 @@ img { display: block; max-width: 100%; height: auto; }
 .adv-item {
   width: calc((100% - 72px) / 4);
 }
+
+.adv-icon-container {
+  display: flex; /* ✅ вирівнювання елемента */
+  align-items: center; /* ✅ по вертикалі */
+  justify-content: center; /* ✅ по горизонталі */
+  height: 112px; /* ✅ висота */
+  background-color: #f4f4fd; /* ✅ колір фону */
+  border: 1px solid #8e8f99; /* ✅ обводка */
+  border-radius: 4px; /* ✅ закруглення */
+  margin-bottom: 8px; /* ✅ відступ між іконкою і заголовком */
+}
+
 /* title and text */
 .adv-title {
   font-weight: 500;
