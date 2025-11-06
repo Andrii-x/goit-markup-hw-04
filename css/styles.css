@@ -367,6 +367,16 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 100px 0;
 }
 
+.footer-container {
+  display: flex; /* ✅ елементи в рядок */
+  align-items: baseline; /* ✅ вирівнювання по базовій лінії */
+}
+
+/* 🔹 Логотип і текст */
+.footer-info {
+  margin-right: 120px; /* ✅ відступ між блоками */
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
