@@ -492,7 +492,7 @@ img { display: block; max-width: 100%; height: auto; }
 .social-list {
   display: flex;
   justify-content: center; /* вирівнювання по горизонталі */
-  gap: 24px; /* відстань між іконками */
+  gap: 16px; /* відстань між іконками */
 }
 
 
@@ -516,7 +516,7 @@ img { display: block; max-width: 100%; height: auto; }
 /* ✅ Ховер і фокус */
 .social-link:hover,
 .social-link:focus {
-  background-color: #404bbf;
+  background-color:#31d0aa;
 }
 
 /* 🔹 Іконки */
