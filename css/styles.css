@@ -516,7 +516,7 @@ img { display: block; max-width: 100%; height: auto; }
 /* ✅ Ховер і фокус */
 .social-link:hover,
 .social-link:focus {
-  background-color: #31d0aa; /* ✅ */
+  background-color: #404bbf; /* ✅ */
 }
 
 /* 🔹 Іконки */
