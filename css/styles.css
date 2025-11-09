@@ -134,6 +134,7 @@ img { display: block; max-width: 100%; height: auto; }
 
 /* ===== Герой (перша секція) ===== */
 .hero {
+  padding: 188px 0;
   background-image: 
   linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   url("../images/hero-bg.jpg");
@@ -458,13 +459,13 @@ img { display: block; max-width: 100%; height: auto; }
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-
   display: inline-block; /* ✅ дає блочні властивості */
   margin-bottom: 16px; /* ✅ відступ між логотипом і текстом */
 }
 
 
 .footer-text {
+  max-width: 264px;
   line-height: 1.5;
   color: var(--footer-text-color, #f4f4fd);
   letter-spacing: 0.02em;
