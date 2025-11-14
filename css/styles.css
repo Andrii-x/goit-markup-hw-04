@@ -179,6 +179,17 @@ img { display: block; max-width: 100%; height: auto; }
 .team-item {
   margin-bottom: 24px;   /* вертикальний відступ між картками */
 }
+.hero {
+  background-image: url("./images/hero-image.jpg"); /* your file name */
+  background-size: cover;      /* image fills the whole area */
+  background-position: center; /* centers the picture */
+  background-repeat: no-repeat;
+
+  padding: 188px 0; /* space above and below text (from Figma) */
+  text-align: center;
+}
+
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
