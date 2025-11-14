@@ -179,15 +179,22 @@ img { display: block; max-width: 100%; height: auto; }
 .team-item {
   margin-bottom: 24px;   /* вертикальний відступ між картками */
 }
-.hero-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: #ffffff;
+  max-width: 496px;
+  margin: 0 auto 48px auto; /* center + space under title */
 }
 
-.hero {
-  text-align: center;
+.hero-btn {
+  padding: 16px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  color: #fff;
+  cursor: pointer;
 }
 
 
