@@ -179,6 +179,16 @@ img { display: block; max-width: 100%; height: auto; }
 .team-item {
   margin-bottom: 24px;   /* вертикальний відступ між картками */
 }
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+}
 
 
 .hero button:hover,
