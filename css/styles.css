@@ -141,8 +141,18 @@ img { display: block; max-width: 100%; height: auto; }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 16px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  color: #fff;
+  cursor: pointer;
+
+
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #2E2F42;
 }
 
 .hero-title {
